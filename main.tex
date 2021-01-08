@@ -1,0 +1,70 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+
+
+\title{ ASSIGNMENT 10}
+\author{ABHYUDAY}
+\date{8 JAN , 2021} 
+
+\begin{document}
+
+\maketitle
+\section{Problem Statement :}
+
+A bulb in a stair case has two switches, one switch being at the ground floor and the other one at the first floor.The bulb can be turned ON and also can be turned OFF by any one of the switches irrespective of the state of the other switch the logic in switching of the bulb resembles.
+
+\begin{enumerate}[label=(\Alph*)]
+  \item an AND gate
+\item an OR gate
+\item an XOR gate
+\item an NAND gate
+\end{enumerate}
+
+
+
+\maketitle
+\newpage
+\section{Answer}
+
+the answer to the given question is (c)
+
+
+\maketitle
+\section{Explanation:}
+let the switches be P$_1$ and P$_2$\newline
+
+
+\setlength{\arrayrulewidth}{1mm}
+\setlength{\tabcolsep}{18pt}
+\renewcommand{\arraystretch}{1.5}
+
+
+
+\begin{tabular}{ |p{1cm}|p{1cm}|p{1cm}| }
+\hline
+\multicolumn{3}{|c|}{ TRUTH TABLE } \\
+\hline
+input($P_1$) & input($P_2$) & output(Y) \\
+\hline
+  0 & 0 & 0 \\
+\hline
+0 & 1 & 1 \\
+\hline
+1 & 0 & 1 \\
+\hline
+1 & 1 & 0  \\
+\hline
+
+\end{tabular}
+
+\vspace{1cm}
+
+Y = ($\overline{P_1}$)($P_2$)+($\overline{P_2}$)($P_1$)
+ 
+From the above truth table, it can be verified that XOR logic is implemented.
+So that if we  switch on at ground floor and switch off at top floor then the bulb enlighten. (vice versa is also true)
+
+
+
+\end{document}
